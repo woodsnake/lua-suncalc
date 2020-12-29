@@ -4,8 +4,8 @@ com = require("common")
 Inv = require("zoe-loader/inverter")
 
 pcall( function () 
-	inverter_8kW = Inv:new({ip="192.168.10.66"})
-	inverter_4kW = Inv:new({ip="192.168.10.43"})
+	inverter_4kW = Inv:new({ip="192.168.10.66"})
+	inverter_8kW = Inv:new({ip="192.168.10.43"})
 	while (true) do
 		print(inverter_8kW:get_power())
 		print(inverter_4kW:get_power())
@@ -13,3 +13,5 @@ pcall( function ()
 		com.timeDelay(10)
 	end
 end)
+
+-- add
