@@ -90,7 +90,7 @@ function SunCalc:get_sun_hight ()
 	local h = self:sidereal_time(d, lw) - c.ra
 	local az = self:azimuth(h, phi, c.dec)
 	local al = self:altitude(h, phi, c.dec)
-	return { azimuth=az, altitude=al }
+	return az, al
 end
 
 return SunCalc
