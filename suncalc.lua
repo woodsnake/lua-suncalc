@@ -6,8 +6,8 @@ SunCalc = require("suncalc/suncalc")
 local ran, err = pcall( function () 
 	sc = SunCalc:new ()
 	while (true) do
-		local azi, alti = sc:get_sun_hight()
-		print("azi: " .. azi .. "\talti: " .. alti )
+		local azi, alti = sc:get_sun_pos()
+		print("azimuth: " .. azi .. "\taltitude: " .. alti )
 		com.timeDelay(1)
 	end
 end)

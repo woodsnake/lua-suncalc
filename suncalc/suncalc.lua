@@ -83,7 +83,7 @@ function SunCalc:sun_coords (d)
 	return { dec=dec, ra=ra }
 end
 
-function SunCalc:get_sun_hight ()
+function SunCalc:get_sun_pos ()
 	local lw = self.RAD * -self.longitude
 	local phi = self.RAD * self.latitude
 	local d = self:to_days(os.time())
