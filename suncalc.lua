@@ -3,11 +3,12 @@
 com = require("suncalc/common")
 SunCalc = require("suncalc/suncalc")
 
-pcall( function () 
+local ran, err = pcall( function () 
 	sc = SunCalc:new ()
 	while (true) do
-		print(sc:get_sun_hight())
+		local azi, alti = sc:get_sun_hight()
+		print("azi: " .. azi .. "alti: " .. alti )
 		com.timeDelay(1)
 	end
 end)
-
+print(err)
