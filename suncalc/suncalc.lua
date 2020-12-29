@@ -5,18 +5,6 @@ SunCalc.DAY_SEC = 60 * 60 * 24
 SunCalc.J1970 = 2440588
 SunCalc.J2000 = 2451545
 SunCalc.E = SunCalc.RAD * 23.4397
-SunCalc.J0 = 0.0009
-SunCalc.SDIST = 149598000
-SunCalc.HC = 0.133 * SunCalc.RAD
-
-SunCalc.TIMES = {
-	{-0.833, "sunrise", "sunset"},
-	{-0.3, "sunrise_end", "sunset_start"},
-	{-6, "dawn", "dusk"},
-	{-12, "nautical_dawn", "nautical_dusk"},
-	{-18, "night_end", "night"},
-	{6, "golden_hour_end", "golden_hour"}
-    }
 
 function SunCalc:new (o)
 	o = o or {}
