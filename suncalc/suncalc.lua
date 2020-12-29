@@ -28,19 +28,20 @@ function SunCalc:new (o)
 
 	return o
 end
---[[ 
-function SunCalc:to_julian(unix_time) -- return type(number) of julian year
+
+
+function SunCalc:to_julian(unix_time)
 	return unix_time / self.DAY_SEC - 0.5 + self.J1970
 end
 
-function SunCalc:from_julian(j) -- return unix time
+function SunCalc:from_julian(j)
 	return (j + 0.5 - self.J1970) * self.DAY_SEC
 end
 
 function SunCalc:to_days(unix_time)
-	return self.to_julian(unix_time) - self.J2000
+	return self:to_julian(unix_time) - self.J2000
 end
---]]
+
 
 -- General calculations for position
 
@@ -85,12 +86,12 @@ end
 function SunCalc:get_sun_hight ()
 	local lw = self.RAD * -self.longitude
 	local phi = self.RAD * self.latitude
-	local d = os.time()
+	local d = self:to_days(os.time())
 	local c = self:sun_coords(d)
 	local h = self:sidereal_time(d, lw) - c.ra
 	local az = self:azimuth(h, phi, c.dec)
 	local al = self:altitude(h, phi, c.dec)
-	return az, al
+	return (az / (math.pi * 2)) * 360, (al / (math.pi * 2)) * 360 
 end
 
 return SunCalc
