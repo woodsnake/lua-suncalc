@@ -1,6 +1,4 @@
-local mb = require("libmodbus")
-
-local Inverter = {}
+local SunCalc = {}
 
 Inverter.var1 = 12
 
@@ -38,4 +36,4 @@ function Inverter:set_port(i)
 end
 
 
-return Inverter
+return SunCalc
