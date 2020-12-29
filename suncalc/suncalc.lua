@@ -11,7 +11,7 @@ function SunCalc:new (o)
 	return o
 end
  
-function SunCalc:get_sun_high ()
+function SunCalc:get_sun_hight ()
 	return (12)
 end
   
