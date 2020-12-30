@@ -1,5 +1,5 @@
-package = "lua-suncalc"
-version = "0.1.0"
+package = "suncalc"
+version = "0.1-0"
 source = {
 	url = "git+https://github.com/woodsnake/lua-suncalc.git"
 }
