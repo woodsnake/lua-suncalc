@@ -1,5 +1,5 @@
 #!/usr/bin/env lua
-SunCalc = require("lib/suncalc")
+SunCalc = require("suncalc")
 
 local ran, err = pcall( function () 
 	sc = SunCalc:new( {latitude=48.85, longitude=10.5} )
