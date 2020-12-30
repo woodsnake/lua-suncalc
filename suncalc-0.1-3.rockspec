@@ -1,5 +1,5 @@
 package = "suncalc"
-version = "0.1-2"
+version = "0.1-3"
 source = {
 	url = "git+https://github.com/woodsnake/lua-suncalc.git"
 }
@@ -18,5 +18,8 @@ build = {
 	type = "builtin",
 	modules = {
 		SunCalc = "lib/suncalc.lua"
+	},
+	install = {
+		bin = "SunCalc"
 	}
 }
