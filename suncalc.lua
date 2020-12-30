@@ -2,7 +2,7 @@
 SunCalc = require("suncalc/suncalc")
 
 local ran, err = pcall( function () 
-	sc = SunCalc:new ({latitude=48.58, longitude=10.49})
+	sc = SunCalc:new( {latitude=48.85, longitude=10.5} )
 	while (true) do
 		local az, al = sc:get_sun_pos()
 		print("azimuth: " .. az .. "\taltitude: " .. al )

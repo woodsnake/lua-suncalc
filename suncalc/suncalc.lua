@@ -8,8 +8,8 @@ SunCalc.E = SunCalc.RAD * 23.4397
 
 function SunCalc:new (o)
 	o = o or {}
-	o.latitude = o.latitude or 48.58
-	o.longitude = o.longitude or 10.49
+	o.latitude = o.latitude or 48.85
+	o.longitude = o.longitude or 10.5
   
 	setmetatable(o, self)
 	self.__index = self
@@ -79,7 +79,7 @@ function SunCalc:get_sun_pos ()
 	local h = self:sidereal_time(d, lw) - c.ra
 	local az = self:azimuth(h, phi, c.dec)
 	local al = self:altitude(h, phi, c.dec)
-	return (az / (math.pi * 2)) * 360, (al / (math.pi * 2)) * 360 
+	return (az / (math.pi * 2)) * 360 + 180, (al / (math.pi * 2)) * 360 
 end
 
 return SunCalc
