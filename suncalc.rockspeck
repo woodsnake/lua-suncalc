@@ -10,7 +10,7 @@ description = {
   detailed = [[
     Package to calculate the sun position    
   ]],
-  homepage = "https://github.com/woodsnake/lua-suncalc"
+  homepage = "https://github.com/woodsnake/lua-suncalc",
   license = "MIT"
 }
 dependencies = {
