@@ -17,6 +17,6 @@ dependencies = {
 build = {
 	type = "builtin",
 	modules = {
-		suncalc = "suncalc/suncalc.lua"
+		suncalc = "lib/suncalc.lua"
 	}
 }
