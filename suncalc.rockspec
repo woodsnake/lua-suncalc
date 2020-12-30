@@ -1,24 +1,22 @@
-
-
 package = "lua-suncalc"
 version = "0.1.0"
 source = {
-  url = "git+https://github.com/woodsnake/lua-suncalc.git"
+	url = "git+https://github.com/woodsnake/lua-suncalc.git"
 }
 description = {
-  summary = "SunCalc is a package to calculate the sun positon",
-  detailed = [[
-    Package to calculate the sun position    
-  ]],
-  homepage = "https://github.com/woodsnake/lua-suncalc",
-  license = "MIT"
+	summary = "SunCalc is a package to calculate the sun positon",
+	detailed = [[
+		Package to calculate the sun position    
+	]],
+	homepage = "https://github.com/woodsnake/lua-suncalc",
+	license = "MIT"
 }
 dependencies = {
-  "lua >= 5.1"
+	"lua >= 5.1"
 }
 build = {
-  type = "builtin",
-  modules = {
-    suncalc = "suncalc/suncalc.lua"
-  }
+	type = "builtin",
+	modules = {
+		suncalc = "suncalc/suncalc.lua"
+	}
 }
