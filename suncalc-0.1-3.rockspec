@@ -20,6 +20,8 @@ build = {
 		SunCalc = "lib/suncalc.lua"
 	},
 	install = {
-		bin = "SunCalc"
+		bin = {
+			"SunCalc"
+		}
 	}
 }
