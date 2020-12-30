@@ -1,8 +1,8 @@
 package = "suncalc"
-version = "0.1-5"
+version = "0.1-6"
 source = {
 	url = "git://github.com/woodsnake/lua-suncalc.git",
-	branch = "master"
+	branch = "v0.1-6"
 }
 description = {
 	summary = "SunCalc is a package to calculate the sun positon",
