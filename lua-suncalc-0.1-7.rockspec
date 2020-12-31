@@ -1,8 +1,8 @@
-package = "suncalc"
-version = "0.1-6"
+package = "lua-suncalc"
+version = "0.1-7"
 source = {
 	url = "git://github.com/woodsnake/lua-suncalc.git",
-	branch = "v0.1-6"
+	branch = "v0.1-7"
 }
 description = {
 	summary = "SunCalc is a package to calculate the sun positon",
@@ -18,6 +18,6 @@ dependencies = {
 build = {
 	type = "builtin",
 	modules = {
-		suncalc = "suncalc.lua"
+		['suncalc'] = "suncalc/suncalc.lua"
 	}
 }
